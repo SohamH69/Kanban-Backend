@@ -1,0 +1,12 @@
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\controller\AuthController.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\controller\TaskController.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\entity\Task.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\entity\User.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\KanbanApplication.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\repository\TaskRepository.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\repository\UserRepository.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\security\JwtAuthenticationFilter.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\security\JwtUtils.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\security\SecurityConfig.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\service\TaskService.java
+C:\Coding\KanbanBackend\src\main\java\todoKanban\kanban\service\UserService.java

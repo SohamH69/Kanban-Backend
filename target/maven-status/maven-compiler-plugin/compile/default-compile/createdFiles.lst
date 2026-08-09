@@ -1,0 +1,12 @@
+todoKanban\kanban\security\JwtAuthenticationFilter.class
+todoKanban\kanban\repository\TaskRepository.class
+todoKanban\kanban\repository\UserRepository.class
+todoKanban\kanban\entity\User.class
+todoKanban\kanban\security\SecurityConfig.class
+todoKanban\kanban\service\TaskService.class
+todoKanban\kanban\entity\Task.class
+todoKanban\kanban\controller\AuthController.class
+todoKanban\kanban\KanbanApplication.class
+todoKanban\kanban\security\JwtUtils.class
+todoKanban\kanban\service\UserService.class
+todoKanban\kanban\controller\TaskController.class
