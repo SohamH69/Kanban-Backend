@@ -1,10 +1,6 @@
 HELP.md
 .env
 
-
-
-
-
 ### STS ###
 .apt_generated
 .classpath
@@ -29,6 +25,5 @@ HELP.md
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-src/main/resources/application.properties
 ### VS Code ###
 .vscode/
