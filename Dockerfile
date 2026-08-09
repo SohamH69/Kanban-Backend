@@ -22,7 +22,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Run the JAR
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:25-jdk
 WORKDIR /app
 COPY --from=build /app/target/kanban-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
