@@ -1,14 +1,29 @@
 # Use official OpenJDK image as base
-FROM eclipse-temurin:25-jdk
+#FROM eclipse-temurin:25-jdk
 
 # Set working directory inside container
-WORKDIR /app
+#WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/kanban-0.0.1-SNAPSHOT.jar app.jar
+#COPY target/kanban-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port your Spring Boot app runs on
-EXPOSE 8080
+#EXPOSE 8080
 
 # Command to run the JAR
+#ENTRYPOINT ["java", "-jar", "app.jar"]
+
+
+# Stage 1: Build the JAR
+FROM maven:3.9-eclipse-temurin-17 AS build
+WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package -DskipTests
+
+# Stage 2: Run the JAR
+FROM eclipse-temurin:17-jdk
+WORKDIR /app
+COPY --from=build /app/target/kanban-0.0.1-SNAPSHOT.jar app.jar
+EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
