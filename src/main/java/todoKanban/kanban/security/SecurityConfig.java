@@ -32,12 +32,14 @@ public class SecurityConfig {
                 .cors(cors -> cors.configure(http))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/auth/**").permitAll() // Public login and register
+                        .requestMatchers("/api/auth/**", "/actuator/health").permitAll() // Public login and register
                         .anyRequest().authenticated()               // Everything else requires JWT
                 )
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
+
+
 
 }
